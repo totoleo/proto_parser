@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package sample;
+
+
+message RecallRequest {
+        string Uid = 1;
+        int32 Dtu = 3;
+        int32 Cate = 4;
+        int32 RecType = 5;
+        string DeviceCode = 6;
+        repeated int32 ContentType = 7;
+        repeated int32 ExcludeDocs = 8;
+        int32 SimilarDocId = 9;
+        bool IsWifi = 10;
+        bool IsVideoPage = 11;
+        int64 RegTime = 12;
+        int64 ActTime = 13;
+        string TkId = 14;
+        int32 Op = 15;
+        int32 Page = 16;
+        int32 Region = 17;
+        string ReqFrom = 19;
+        int32 ClientVersion = 20;
+        int32 AutoplayFilter = 21;
+        int32 RegionFrequency = 22;
+        float Lon = 23;
+        float Lat = 24;
+        repeated int32 ExcludeDocsV2 = 25;
+        map<string, string> Extend = 26;
+        string TUid = 27;
+}
